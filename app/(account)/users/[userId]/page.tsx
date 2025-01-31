@@ -70,9 +70,9 @@ export default function UserPage({ params }: { params: { userId: string } }) {
       <h1>Username: {user.username}</h1>
       <h2>Company: {user.company.name}</h2>
       <div>
-        <h3>User's Posts:</h3>
+        <h3>User&apos;s Posts:</h3>
         <ul>
-          {userPosts.map((post) => (
+          {userPosts?.map((post) => (
             <li key={post.id}>{post.title}</li>
           ))}
         </ul>
